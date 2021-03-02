@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/* ---------- general ---------- */
+body,html{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* ---------- upper banner ---------- */
+#UpperBanner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 11.5px;
+    height: 40px;
+    text-transform: uppercase;
+    background-color: black;
+    padding: 0 60px;
+}
+#UpperBanner ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+}
+#UpperBanner ul li{
+    margin-left: 12px;
+    list-style-type: none;
+}
+#UpperBanner ul li:nth-child(1){
+    margin-left: 0;
+}
+#UpperBanner ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+#UpperBanner ul li a p{
+    color: #ffffff;
+    margin-top: 2px;
+    margin-left: 4px;
+}
+#UpperBanner ul li a svg{
+    margin-top: 2px;
+}
+@media(max-width: 1044px){
+    #UpperBanner{
+        display: none;
+    }
+}
+
+/* ---------- nav upper ---------- */
+#NavUpper{
+    height: 86px;
+    border-bottom: 1px solid #DCDCDC;
+    margin: 2px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#MainLogo{
+    width: 210px;
+}
+#NavUpper ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 36px;
+}
+#NavUpper ul a{
+    display: flex;
+    flex-direction: row;
+}
+#NavUpper ul li{
+    list-style-type: none;
+    margin-left: 20px;
+}
+#NavUpper ul a p{
+    margin-top: 0px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+@media(max-width: 1044px){
+    #NavUpper{
+        display: none;
+    }
+}
+
+/* ---------- nav lower ---------- */
+#NavLower{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 60px;
+    height: 70px;
+    border-bottom: 1px solid #DCDCDC;
+}
+#NavLower ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+}
+#NavLower ul li{
+    list-style-type: none;
+    margin-right: 50px;
+}
+#NavLower ul li a{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-size: 15px;
+}
+.red{
+    color: rgb(255, 0, 0);
+}
+#NavDiv{
+    min-width: 845px;
+}
+#SearchDiv{
+    max-width: 39%;
+    width: 36vw;
+}
+#SearchBar{
+    background-color: #eee;
+    border: none;
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 11px;
+}
+#SearchBar:focus, #SearchBar:active{
+    width: calc(100vw - 120px);
+    position: absolute;
+    left: 60px;
+    outline: none;
+}
+#SearchButton{
+    position: absolute;
+    right: 70px;
+    margin-top: 25px;
+}
+@media(max-width: 1044px){
+    #NavLower{
+        display: none;
+    }
+}
+
+/* ---------- mobile nav ---------- */
+#MobileNav{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    display: none;
+    height: 50px;
+}
+#MainLogoMobile{
+    filter: invert(100%);
+    height: 14px;
+    margin-top: 18px;
+    
+}
+#MobileNav svg{
+    margin-top: 12px;
+    margin-left: 8px;
+}
+@media(max-width: 1044px){
+    #MobileNav{
+        display: flex;
+    }
+}
+
+
+/* ---------- drop menu ---------- */
+#DropMenu{
+    position: absolute;
+    background-color: #ffffff;
+    height: 70vh;
+    width: 100vw;
+    padding: 0 60px;
+    font-size: 13px;
+    color: #777;
+}
+#DropMenu .heading{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    color: black;
+}
+#DropMenu li{
+    list-style-type: none;
+    padding-left: 0;
+}
+#DropMenu ul{
+    padding-left: 0;
+}
+
+
+/* ---------- main ---------- */
+.container{
+    padding: 0 60px;
+    margin-bottom: 65px;
+}
+.row{
+    display: flex;
+}
+.img-card{
+    height: auto;
+    width: 25%;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.img-end{
+    padding-right: 0;
+}
+.img-card img{
+    width: 100%;
+}
+.big{
+    width: 50%;
+}
+@media(max-width: 800px){
+    .row{
+        flex-wrap: wrap;
+    }
+    .img-card{
+        width: 48%;
+    }
+    .img-mid{
+        padding-right: 0;
+    }
+    .big{
+        width: 100%;
+        padding-right: 0;
+    }
+}
+@media(max-width: 640px){
+    .img-card{
+        width: 45%;
+    }
+    .img-mid{
+        padding-right: 0;
+    }
+    .big{
+        width: 100%;
+        padding-right: 0;
+    }
+}
+@media(max-width: 500px){
+    .img-card{
+        width: 100%;
+        padding-right: 0;
+    }
+    .big{
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
+
+/* ---------- footer top ---------- */
+#FooterTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 60px;
+    border-top: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+    margin-bottom: 16px;
+    padding: 50px 0;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+#FooterTop .logo{
+    height: 48px;
+    width: 48px;
+    padding-right: 120px;
+    margin-left: -55px;
+}
+#FooterTop .green{
+    color: #c3e302;
+    font-size: 22px;
+    margin-bottom: -10px;
+    margin-top: 12px;
+}
+#GiftCardsDiv, #CardsDiv, #Apps{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#GiftCardsDiv *, #CardsDiv *, #Apps *{
+    margin-right: 2px;
+}
+@media(max-width: 1044px){
+    #FooterTop{
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    #FooterTop .logo{
+        display: none;
+    }
+    #GiftCardsDiv, #CardsDiv, #Apps{
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    #FooterTop .heading{
+        padding-top: 15px;
+    }
+    #WrewardsDiv{
+        margin-top: -20px;
+    }
+}
+
+
+/* ---------- footer mid ---------- */
+#FooterMid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 60px;
+    border-bottom: 1px solid #DCDCDC;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+#FooterMid .heading{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+#FooterMid ul{
+    padding-left: 0;
+}
+#FooterMid li a{
+    color: #777;
+    font-size: 13px;
+}
+#FooterMid li{
+    list-style-type: none;
+    padding-bottom: 4px;
+}
+#Socials li{
+    display: grid;
+    grid-template-columns: 30px 50px;
+    margin-bottom: 2px;
+}
+@media(max-width: 800px){
+    #FooterMid{
+        flex-direction: column;
+        text-align: center;
+    }
+    #Socials ul{
+        text-align: center;
+        display: flex;
+        width: 150px;
+        margin-left: calc((100vw - 330px)/2);
+    }
+    #Socials ul li{
+        width: 40px;
+    }
+    #Socials ul a{
+        display: none;
+    }
+}
+
+
+/* ---------- footer bottom ---------- */
+#FooterBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 60px;
+    padding-bottom: 30px;
+}
+#FooterBottom .legalText{
+    color: #777;
+    font-size: 9px;
+}
+#FooterBottom .secure{
+    display: flex;
+}
+#FooterBottom .secure img{
+    margin-right: 4px;
+    height: 26px;
+}
+@media(max-width: 800px){
+    #FooterBottom{
+        flex-direction: column;
+        text-align: center;
+    }
+    #FooterBottom .secure{
+        margin-left: calc((100vw - 377px)/2);
+    }
+}
